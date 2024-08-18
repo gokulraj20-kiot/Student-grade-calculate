@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class AvergaeMarks {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your tamil mark");
+        int t = scan.nextInt();
+        System.out.println("Enter your english mark");
+        int e = scan.nextInt();
+        System.out.println("Enter your maths mark");
+        int m = scan.nextInt();
+        System.out.println("Enter your science mark");
+        int s1 = scan.nextInt();
+        System.out.println("Enter your social mark");
+        int s2 = scan.nextInt();
+        int Total = t+e+m+s1+s2;
+        System.out.println("Your total mark is "+Total);
+        float average = Total / 5;
+        System.out.println("Your average is: " + average);
+        if(average >= 90){
+            System.out.println("You secured A+");
+        }
+        else if(average >= 80){
+            System.out.println("You secured A");
+        }
+        else if(average >= 70){
+            System.out.println("You secured B+");
+        }
+        else if(average >= 60){
+            System.out.println("You secured B");
+        }
+        else if(average >= 50){
+            System.out.println("You secured C+");
+        }
+        else if(average >= 40){
+            System.out.println("You secured C");
+        }
+        else{
+            System.out.println("You have failed");
+        }
+        scan.close();
+
+    }
+}
